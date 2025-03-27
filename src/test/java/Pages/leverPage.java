@@ -1,12 +1,12 @@
-package pages;
+package Pages;
 
-import Base.BasePage;
+import Base.basePage;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import static constants.constants.*;
+import static Constants.constants.*;
 
-public class leverPage extends BasePage {
+public class leverPage extends basePage {
     private final Logger logger = LoggerFactory.getLogger(leverPage.class);
 
     public leverPage(WebDriver webDriver) {

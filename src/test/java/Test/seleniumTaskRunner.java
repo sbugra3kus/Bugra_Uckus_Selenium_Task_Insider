@@ -1,10 +1,10 @@
-package test;
+package Test;
 
 import Base.baseTest;
-import pages.careersPage;
-import pages.homePage;
-import pages.leverPage;
-import pages.openPositionsPage;
+import Pages.careersPage;
+import Pages.homePage;
+import Pages.leverPage;
+import Pages.openPositionsPage;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;

@@ -1,14 +1,13 @@
-package pages;
+package Pages;
 
-import Base.BasePage;
-import org.openqa.selenium.By;
+import Base.basePage;
 import org.openqa.selenium.WebDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import static constants.constants.*;
+import static Constants.constants.*;
 
-public class openPositionsPage extends BasePage {
+public class openPositionsPage extends basePage {
     private final Logger logger = LoggerFactory.getLogger(openPositionsPage.class);
 
     public openPositionsPage(WebDriver webDriver) {
@@ -36,9 +35,7 @@ public class openPositionsPage extends BasePage {
     public openPositionsPage checkAllJobsIsInIstanbul(){
         logger.info("checking all listed jobs are in Istanbul");
         scrollUntilVisible(POSITION_LOCATION_TEXT);
-        //checkElementDisplayed(POSITION_LOCATION_TEXT);
         checkElementText(POSITION_LOCATION_TEXT,"Istanbul, Turkiye");
-        //checkListText(POSITION_LOCATION_TEXT,"Istanbul, Turkiye");
         return this;
     }
     public openPositionsPage checkAllDepartmentContainsQA(){
@@ -52,7 +49,6 @@ public class openPositionsPage extends BasePage {
         logger.info("clicking the view role");
         scrollUntilVisible(JOB_CARD);
         hoverElement(JOB_CARD);
-        //scrollUntilVisible(VIEW_ROLE);
         click(VIEW_ROLE);
         return this;
     }

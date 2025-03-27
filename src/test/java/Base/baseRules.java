@@ -11,7 +11,7 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
-public class BaseRules {
+public class baseRules {
 
     public static TestWatcher createScreenshotRule(baseTest baseTest) {
         return new TestWatcher() {

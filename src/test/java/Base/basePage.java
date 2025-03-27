@@ -10,11 +10,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.List;
 
-public class BasePage {
+public class basePage {
     protected WebDriver webDriver;
     protected WebDriverWait webDriverWait;
 
-    public BasePage(WebDriver webDriver) {
+    public basePage(WebDriver webDriver) {
         this.webDriver = webDriver;
         this.webDriverWait = new WebDriverWait(webDriver, Duration.ofSeconds(15));
     }
